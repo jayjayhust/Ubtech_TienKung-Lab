@@ -4,7 +4,7 @@
 
 ## 概览
 
-该框架是一个基于强化学习（RL）的运动控制系统，适用于全尺寸人形机器人天工行者。它将 AMP 风格[[本项目代码文件]](https://github.com/jayjayhust/Ubtech_TienKung-Lab/blob/ubetech-comp-2026/rsl_rl/rsl_rl/algorithms/amp_ppo.py)[[AMP原始项目]](https://github.com/linden713/humanoid_amp)的奖励与周期性步态奖励相结合，促进了自然、稳定和高效的行走和跑步行为。
+该框架是一个基于强化学习（RL）的运动控制系统，适用于全尺寸人形机器人天工行者。它将 AMP(Adversarial Motion Priors) 风格[[本项目代码文件]](https://github.com/jayjayhust/Ubtech_TienKung-Lab/blob/ubetech-comp-2026/rsl_rl/rsl_rl/algorithms/amp_ppo.py)[[AMP原始项目]](https://github.com/linden713/humanoid_amp)的奖励与周期性步态奖励相结合，促进了自然、稳定和高效的行走和跑步行为。
 
 该代码库建立在 IsaacLab 之上，支持 Sim2Sim 迁移到 MuJoCo，并具有模块化架构，便于无缝定制和扩展。此外，它还结合了基于光线投射的传感器以增强感知能力，能够精确地与环境交互并避障。该框架已在真机得到成功验证。
 
@@ -69,7 +69,7 @@ python legged_lab/scripts/train.py --task=walk  --logger=tensorboard --headless 
 
 ### 运动重定向（Motion Retargeting）
 
-本节使用 [GMR](https://github.com/YanjieZe/GMR) 进行运动重定向，Walker TienKung 目前仅支持 SMPLX 类型（AMASS, OMOMO）的运动重定向。
+本节使用 [GMR(General Motion Retargeting)](https://github.com/YanjieZe/GMR) 进行运动重定向，Walker TienKung 目前仅支持 SMPLX 类型（AMASS, OMOMO）的运动重定向。
 
 **1. 准备数据集并使用 [GMR](https://github.com/YanjieZe/GMR) 进行运动重定向。**
 
